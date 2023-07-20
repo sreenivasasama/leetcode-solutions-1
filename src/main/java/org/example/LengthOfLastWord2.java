@@ -15,11 +15,13 @@ public class LengthOfLastWord2 {
         int i = 0;
         int count = 0;
         while(i<len) {
-            //initialize the count to 0
-            count = 0;
             //remove initial spaces
             while (i < len && s.charAt(i) == ' ') {
                 i++;
+            }
+            //Initialize the counter again if there are words after the first word
+            if(i < len && s.charAt(i)!= ' ' ){
+                count = 0;
             }
             //count the characters of each string if found
             while (i < len && s.charAt(i) != ' ') {

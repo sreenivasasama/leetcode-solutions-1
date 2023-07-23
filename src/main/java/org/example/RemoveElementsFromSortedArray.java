@@ -7,7 +7,7 @@ public class RemoveElementsFromSortedArray {
         System.out.println("Remove duplicate elements from Sorted Array and return count of array");
         char[] chars = {'a', 'a', 'b', 'd', 'd', 'e', 'f', 'f'};
 
-        System.out.println("Length of the array before removing duplicates" + chars.length);
+        System.out.println("Length of the array before removing duplicates " + chars.length);
 
         System.out.println("Length of the array after removing duplicates" + removeDupFromSortedArray(chars));
         //the elements are present at the end of the array, this can be copied to new array upto the count of the updated array,
